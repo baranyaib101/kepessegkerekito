@@ -1,0 +1,155 @@
+/* 944px = 59*16px */
+
+@media (max-width: 59em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+/* 704px = 44*16px */
+
+@media (max-width: 44em) {
+  html {
+    font-size: 40%;
+  }
+
+  .rolam-top {
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+
+  .izuka {
+    justify-self: center;
+  }
+
+  .logopedia-left {
+    grid-template-columns: 1fr;
+  }
+
+  .logopedia-right {
+    grid-template-columns: 1fr;
+  }
+
+  .logopedia-right img {
+    grid-row: 2 / 3;
+  }
+
+  .nyelvlokes {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .timondtatok {
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+  }
+
+  .rolam-bottom::before,
+  .rolam-bottom::after {
+    content: "";
+    display: block;
+    border-radius: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .rolam-bottom::before {
+    width: 50%;
+    padding-bottom: 50%;
+    background-color: rgba(16, 152, 173, 0.1);
+    z-index: -2;
+  }
+
+  .rolam-bottom::after {
+    width: 40%;
+    padding-bottom: 40%;
+    background-color: rgba(16, 152, 173, 0.1);
+    z-index: -1;
+  }
+
+  .tulerzekeny-text::before,
+  .tulerzekeny-text::after {
+    content: "";
+    display: block;
+    border-radius: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .tulerzekeny-text::before {
+    width: 50%;
+    padding-bottom: 50%;
+    background-color: rgba(16, 152, 173, 0.1);
+    z-index: -2;
+  }
+
+  .tulerzekeny-text::after {
+    width: 40%;
+    padding-bottom: 40%;
+    background-color: rgba(16, 152, 173, 0.1);
+    z-index: -1;
+  }
+
+  .btn-mobile-nav {
+    display: block;
+    z-index: 9999;
+  }
+
+  .top-nav {
+    /* background-color: rgba(255, 255, 255, 0.5); */
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 55%;
+    height: 40vh;
+    transform: translateX(100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+
+    /* Hide navigation */
+    /* Allows NO transitions at all */
+    /* display: none; */
+
+    /* 1) Hide it visually */
+    opacity: 0;
+
+    /* 2) Make it unaccessible to mouse and keyboard */
+    pointer-events: none;
+
+    /* 3) Hide it from screen readers */
+    visibility: hidden;
+  }
+
+  .nav-open .top-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    /* transform: translateX(100%); */
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .top-nav {
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+
+  .top-nav a:link,
+  .top-nav a:visited {
+    font-size: 2rem;
+  }
+}

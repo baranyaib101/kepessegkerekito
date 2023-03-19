@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  color: #444;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.top-header {
+  background-color: #f7f7f7;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav {
+  font-size: 16px;
+}
+
+nav a:link {
+  margin-left: 20px;
+}
+
+footer {
+  margin-top: 20px;
+}
+
+h2 {
+  margin-bottom: 15px;
+  margin-top: 15px;
+  color: #1098ad;
+}
+
+h3 {
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+p {
+  margin-bottom: 20px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  color: #1098ad;
+}
+
+a:hover {
+  color: orangered;
+  font-weight: bold;
+  text-decoration: underline orangered;
+}
+
+.logo {
+  width: 250px;
+  height: auto;
+}
+
+.rolam {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.boldy {
+  font-weight: bold;
+}
+
+.izuka {
+  width: 180px;
+  height: auto;
+}
+
+.logopedia {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.nyelvlokes {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.kislany {
+  width: 400px;
+  height: auto;
+}
+
+.kislany2 {
+  width: 200px;
+  height: auto;
+}
+
+.quote {
+  font-style: italic;
+}
+
+.tel,
+.web,
+.email,
+.nev {
+  font-size: 20px;
+}
